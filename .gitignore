@@ -1,0 +1,15 @@
+# Secrets
+.env
+*.key
+*.pem
+
+# Python junk
+__pycache__/
+*.pyc
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
