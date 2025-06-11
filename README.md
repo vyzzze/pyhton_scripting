@@ -18,7 +18,7 @@ this repository contains my collection of python scripts and related files that 
 ## usage
 
 1. clone the repository.  
-2. create a `.env` file based on the `.env.example` template (if provided).  
+2. create a `.env` file based on the `.env.example` template.  
 3. install required python packages which are:
   - `twitchio` (which i believe has `asyncio` already included)
   - `obswebsocket`
