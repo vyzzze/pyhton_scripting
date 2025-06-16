@@ -83,7 +83,7 @@ def send_discord_live_notification():
     print("Sending Discord notification.")
     webhook = DiscordWebhook(
         url=DISCORD_WEBHOOK_URL,
-        content=f"{TWITCH_USERNAME} ist live! joined hier: https://twitch.tv/{TWITCH_USERNAME} ||@everyone||"
+        content=f"{TWITCH_USERNAME} ist live! kommt rein: https://twitch.tv/{TWITCH_USERNAME} ||@everyone||"
     )
     webhook.execute()
 
@@ -129,7 +129,7 @@ class Bot(commands.Bot):
         self.obs = OBSController(OBS_HOST, OBS_PORT, OBS_PASSWORD)
 
     async def event_ready(self):
-        print(f'Logged in as | {self.nick}')
+        print(f'{NICK} | is online')
     
     async def event_message(self, message):                             # ==== TWITCH CHAT COMMANDS =====
         if message.echo:
